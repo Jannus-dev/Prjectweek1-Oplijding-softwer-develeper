@@ -1,0 +1,319 @@
+html,
+body {
+  margin: 0px;
+}
+
+body {
+  display: flex;
+  width: 100%;
+  height: 99%;
+  justify-content: center;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+
+/* Header groote en positie */
+header {
+  width: 100%;
+  height: 141px;
+  left: 0px;
+  top: 0px;
+  display: block;
+}
+
+/* logo in de header */
+.header-logo {
+  width: 400px;
+  display: inline-block;
+}
+
+/* kleine animatie bij logo in de header */
+.header-logo:hover {
+  transform: scale(110%);
+}
+
+/* Titel van de website positie*/
+.website-name {
+  width: 700px;
+  display: inline-block;
+}
+
+/* titel van website opmaak */
+h1 {
+  text-align: center;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 65px;
+  margin-top: 0px;
+}
+
+/* navigatie balk */
+nav {
+  background-color: black;
+  height: 110px;
+  width: 100%;
+  margin: 0px;
+  display: flex;
+  flex-direction: row;
+}
+
+/* ontwerp en positie bepaling van navigatie balk onderdelen */
+ul {
+  font-family: "Ubuntu", sans-serif;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0px;
+  margin-top: 0px;
+  width: 100%;
+  height: 110px;
+  color: white;
+}
+
+/* wanneer hover over navigatie balk worden de woorden oranje */
+nav ul a li:hover {
+  color: rgb(232, 96, 6);
+  text-underline-offset: 0.4em;
+}
+
+/* zorgen dat de links geen decoratie hebben */
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/* opmaak van de tekst in nav */
+li {
+  font-size: 30px;
+  text-decoration: underline rgb(232, 96, 6);
+  color: white;
+}
+
+/* menu afbeelding in de nav */
+.imagemenu {
+  width: 90px;
+  height: 101px;
+  transition: transform 0.5s ease-in-out;
+}
+
+/* kleine spin animatie voor wanneer je over menu icon gaat in nav */
+.imagemenu:hover {
+  transform: rotate(1080deg);
+}
+
+/* Zorgt voor centrale opmaak van alle tekst in de website */
+p {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 40px;
+  text-align: center;
+}
+
+/* zorgd voor de oranje lijn onder sommige woorden */
+#oranje-underline {
+  text-decoration: underline rgb(232, 96, 6);
+}
+
+/* Dropdown menu positie */
+.dropdown {
+  display: inline-block;
+  position: relative;
+}
+
+/* stijl en opmaak van content van de dropdown menu */
+.dropdown-content {
+  position: absolute;
+  background-color: rgb(232, 96, 6);
+  min-width: 110px;
+  display: none;
+  z-index: 1;
+  padding: 10px 11px;
+}
+
+/* opmaak zodat de links een mooie uiterlijk hebben */
+.dropdown-content a {
+  color: black;
+  padding: 1px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* bij dropdown waneer je over iets gaat selecie indicatie*/
+.dropdown-content a:hover {
+  background-color: black;
+}
+
+/* positie van content in dropdown */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* hover kleur dropdown */
+.dropdown:hover .dropbtn {
+  background-color: rgb(29, 26, 26);
+}
+
+/* text in dropdown wit */
+.dropdown a p {
+  color: white;
+  font-size: 30px;
+}
+
+/* op home page het block waar je alle vakken kunt zien */
+/* opmaak en positie */
+.main-block {
+  background-color: rgba(217, 217, 217, 0.57);
+  border: 3px solid #000000;
+  border-radius: 42px;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  /* align-items: baseline; */
+  align-content: center;
+  flex-wrap: wrap;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+/* op alle pagina's de inhoud blokken */
+/* opmaak en positie's */
+.main-block2 {
+  background-color: rgba(217, 217, 217, 0.57);
+  border: 3px solid #000000;
+  border-radius: 42px;
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 50% 50%;
+  margin-left: 150px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  width: 1058px;
+  font-family: "Ubuntu", sans-serif;
+}
+
+/* op home page de knoppen voor de vakken */
+/* uiterlijk en postitie */
+.vakken-blokken {
+  background-color: rgb(232, 96, 6);
+  height: 225px;
+  width: 200px;
+  border-radius: 44px;
+  margin-top: 10px;
+  margin-left: 50px;
+  margin-left: 50px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* groote voor de tekst in de vak blokken */
+.vakken-blokken p {
+  font-size: 30px;
+  margin-top: 0;
+}
+
+/* groote voor de afbeeldingen in vak blokken */
+.vakken-blokken img {
+  height: 90px;
+}
+
+/* de blokken met informatie op de pagina's voor de vakken */
+/* uiterlijk en positie */
+.blok {
+  background-color: rgb(232, 96, 6);
+  height: 325px;
+  width: 350px;
+  border-radius: 13%;
+  margin-left: 92px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+/* afbeeldinge van docenten opmaak */
+#picture {
+  height: 250px;
+  border-radius: 50%;
+}
+
+/* kleinere tekst in de informatie blokken van de vakken */
+#kleine-text {
+  font-size: 18px;
+}
+
+/* afbeelding voor sport op de sport pagina groote */
+#sport {
+  height: 200px;
+}
+
+/* kleinere tekst in de informatie blokken van de vakken */
+.blok p {
+  margin: 0px;
+  font-size: 40px;
+}
+
+/* informatie tebbelen op de vakken pagina's */
+/* stijl en positie */
+table {
+  width: 325px;
+  height: 200px;
+  background-color: #ffffff;
+  border-collapse: collapse;
+  border-width: 1px;
+  border-color: #000000;
+  border-style: solid;
+  color: #000000;
+  top: 200px;
+  margin-top: 50px;
+}
+
+/* opmaak tabel */
+table,
+Table,
+td,
+table,
+Table,
+th {
+  border-width: 1px;
+  border-color: #000000;
+  border-style: solid;
+  padding: 2px;
+}
+
+/* kleur van tabel */
+table Table thead {
+  background-color: rgb(215, 221, 218);
+}
+
+/* footer achtergrond kleur */
+footer {
+  background-color: black;
+  margin-bottom: 0px;
+  bottom: 0px;
+}
+
+/* kleur text van footer */
+footer p {
+  font-size: 20px;
+  color: rgb(232, 96, 6);
+}
+
+#long-text{
+  font-size: 15px;
+  height: 350px;
+  border-radius: 2.5%;
+}
+
+#big-box{
+  height: 350px;
+}
